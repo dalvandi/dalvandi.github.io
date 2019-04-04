@@ -1,0 +1,24 @@
+method PRIME_API_APP_REG(std::vector<std::pair<pid_t, std::shared_ptr<prime::uds>>> app_sockets, pid_t proc_id) returns(){PRIME_API_APP_REG}
+method PRIME_API_APP_DEREG(std::vector<std::pair<pid_t, std::shared_ptr<prime::uds>>> app_sockets, pid_t proc_id, std::vector<prime::api::app::knob_disc_t> app_knobs_disc, std::vector<prime::api::app::knob_cont_t> app_knobs_cont, std::vector<prime::api::app::mon_disc_t> app_mons_disc, std::vector<prime::api::app::mon_cont_t> app_mons_cont) returns(){PRIME_API_APP_DEREG}
+method PRIME_API_APP_KNOB_DISC_REG(std::vector<std::pair<pid_t, std::shared_ptr<prime::uds>>> app_sockets, pid_t proc_id, std::vector<prime::api::app::knob_disc_t> app_knobs_disc, prime::api::app::knob_disc_t knob) returns(){PRIME_API_APP_KNOB_DISC_REG}
+method PRIME_API_APP_KNOB_DISC_DEREG(std::vector<prime::api::app::knob_disc_t> app_knobs_disc, pid_t proc_id, int id) returns(){PRIME_API_APP_KNOB_DISC_DEREG}
+method PRIME_API_APP_KNOB_DISC_MIN(std::vector<prime::api::app::knob_disc_t> app_knobs_disc, pid_t proc_id, int id, int min) returns(){PRIME_API_APP_KNOB_DISC_MIN}
+method PRIME_API_APP_KNOB_DISC_MAX(std::vector<prime::api::app::knob_disc_t> app_knobs_disc, pid_t proc_id, int id, int max) returns(){PRIME_API_APP_KNOB_DISC_MAX}
+method PRIME_API_APP_KNOB_CONT_MIN(std::vector<prime::api::app::knob_cont_t> app_knobs_cont, pid_t proc_id, int id, int min) returns(){PRIME_API_APP_KNOB_CONT_MIN}
+method PRIME_API_APP_KNOB_CONT_MAX(std::vector<prime::api::app::knob_cont_t> app_knobs_cont, pid_t proc_id, int id, int max) returns(){PRIME_API_APP_KNOB_CONT_MAX}
+method PRIME_API_APP_KNOB_DISC_GET(std::vector<prime::api::app::knob_disc_t> app_knobs_disc, pid_t proc_id, int id, int val) returns(){PRIME_API_APP_KNOB_DISC_GET}
+method PRIME_API_APP_KNOB_CONT_GET(std::vector<prime::api::app::knob_cont_t> app_knobs_cont, pid_t proc_id, int id, int val) returns(){PRIME_API_APP_KNOB_CONT_GET}
+method PRIME_API_APP_MON_DISC_MIN(std::vector<prime::api::app::mon_disc_t> app_mons_disc, pid_t proc_id, int id, int min) returns(){PRIME_API_APP_MON_DISC_MIN}
+method PRIME_API_APP_MON_DISC_MAX(std::vector<prime::api::app::mon_disc_t> app_mons_disc, pid_t proc_id, int id, int max) returns(){PRIME_API_APP_MON_DISC_MAX}
+
+method PRIME_API_APP_MON_CONT_MIN(std::vector<prime::api::app::mon_cont_t> app_mons_cont, pid_t proc_id, int id, int min) returns(){PRIME_API_APP_MON_CONT_MIN}
+method PRIME_API_APP_MON_CONT_MAX(std::vector<prime::api::app::mon_cont_t> app_mons_cont, pid_t proc_id, int id, int max) returns(){PRIME_API_APP_MON_CONT_MAX}
+method PRIME_API_APP_MON_DISC_SET(std::vector<prime::api::app::mon_disc_t> app_mons_disc, pid_t proc_id, int id, int val) returns(){PRIME_API_APP_MON_DISC_SET}
+method PRIME_API_APP_MON_CONT_SET(std::vector<prime::api::app::mon_cont_t> app_mons_cont, pid_t proc_id, int id, int val) returns(){PRIME_API_APP_MON_CONT_SET}
+method PRIME_API_APP_KNOB_CONT_REG(std::vector<std::pair<pid_t, std::shared_ptr<prime::uds>>> app_sockets, pid_t proc_id, std::vector<prime::api::app::knob_cont_t> app_knobs_cont, prime::api::app::knob_cont_t knob) returns(){PRIME_API_APP_KNOB_CONT_REG}
+method PRIME_API_APP_KNOB_CONT_DEREG(std::vector<prime::api::app::knob_cont_t> app_knobs_cont, pid_t proc_id, int id) returns(){PRIME_API_APP_KNOB_CONT_DEREG}
+method PRIME_API_APP_MON_DISC_REG(std::vector<std::pair<pid_t, std::shared_ptr<prime::uds>>> app_sockets, pid_t proc_id, std::vector<prime::api::app::mon_disc_t> app_mons_disc, prime::api::app::mon_disc_t mon) returns(){PRIME_API_APP_MON_DISC_REG}
+
+method PRIME_API_APP_MON_CONT_REG(std::vector<std::pair<pid_t, std::shared_ptr<prime::uds>>> app_sockets, pid_t proc_id, std::vector<prime::api::app::mon_cont_t> app_mons_cont, prime::api::app::mon_cont_t mon) returns(){PRIME_API_APP_MON_CONT_REG}
+method PRIME_API_APP_MON_DISC_DEREG(std::vector<prime::api::app::mon_disc_t> app_mons_disc, pid_t proc_id, int id) returns(){PRIME_API_APP_MON_DISC_DEREG}
+method PRIME_API_APP_MON_CONT_DEREG(std::vector<prime::api::app::mon_cont_t> app_mons_cont, pid_t proc_id, int id) returns(){PRIME_API_APP_MON_CONT_DEREG}
