@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/ac.soton.codegen.feature_1.0.0.201904150021.jar" id="ac.soton.codegen.feature" version="1.0.0.201904150021"/>
+</site>
